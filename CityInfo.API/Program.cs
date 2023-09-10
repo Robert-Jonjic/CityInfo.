@@ -32,7 +32,7 @@ namespace CityInfo.API
             //Additional test feature
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("Hello World");
+                await context.Response.WriteAsync("Robert Test configuration");
             });
 
             app.Run();
