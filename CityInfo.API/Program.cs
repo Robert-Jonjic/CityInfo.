@@ -29,9 +29,10 @@ namespace CityInfo.API
 
             app.MapControllers();
 
+            //Additional test feature
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("Hello World");
+                await context.Response.WriteAsync("Testing repository name change");
             });
 
             app.Run();
