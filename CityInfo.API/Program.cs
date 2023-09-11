@@ -32,7 +32,7 @@ namespace CityInfo.API
             //Additional test feature
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("Testing repository name change - interoperability");
+                await context.Response.WriteAsync("Repository name change - interoperability");
             });
 
             app.Run();
