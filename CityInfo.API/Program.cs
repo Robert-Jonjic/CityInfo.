@@ -32,7 +32,7 @@ namespace CityInfo.API
             //Additional test feature
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("Interoperability");
+                await context.Response.WriteAsync("Branching - interoperability");
             });
 
             app.Run();
