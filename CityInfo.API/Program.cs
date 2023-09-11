@@ -26,14 +26,7 @@ namespace CityInfo.API
 
             app.UseAuthorization();
 
-
             app.MapControllers();
-
-            //Additional test feature
-            app.Run(async (context) =>
-            {
-                await context.Response.WriteAsync("Checking branching - interoperability");
-            });
 
             app.Run();
         }
