@@ -24,9 +24,14 @@ namespace CityInfo.API
 
             app.UseHttpsRedirection();
 
+            app.UseRouting();
+
             app.UseAuthorization();
 
-            app.MapControllers();
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
 
             app.Run();
         }
