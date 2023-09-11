@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-
-namespace CityInfo.API.Controllers
+﻿namespace CityInfo.API.Controllers
 {
     [ApiController]
     [Route("api/cities")]
