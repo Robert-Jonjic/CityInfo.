@@ -27,5 +27,19 @@ namespace CityInfo.API.Controllers
 
             return Ok(cityToReturn);
         }
+        [HttpPost]
+        public IActionResult PostCity([FromBody] CityDto city) 
+        {
+            if (city == null) 
+            {
+                return BadRequest();
+            }
+            var dataBase = CitiesDataStore.Current.Cities;
+            var maxId = dataBase.Max(c => c.Id);
+            city.Id = maxId + 1; 
+            dataBase.Add(city);
+            
+            return Ok(dataBase);
+        }
     }
 }
